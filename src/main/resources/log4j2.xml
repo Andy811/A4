@@ -4,7 +4,8 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-        <RollingFile name="RollingFile" fileName="logs/system_notice.log"
+
+        <RollingFile name="RollingFile Main" fileName="logs/system_notice.log"
                      filePattern="logs/system_notice.log.%d{yyyyMMdd-hh.mm.ss}.log">
             <PatternLayout>
                 <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
@@ -16,7 +17,7 @@
         </RollingFile>
 
 
-        <RollingFile name="RollingFile2" fileName="logs/Log2.system_notice.log"
+        <RollingFile name="RollingFile Log2" fileName="logs/Log2.system_notice.log"
                      filePattern="logs/Log2.system_notice.log.%d{yyyyMMdd-hh.mm.ss}.log">
             <PatternLayout>
                 <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
@@ -30,17 +31,15 @@
 
     <Loggers>
         <Logger name="com.andeji.Main">
-            <AppenderRef ref="RollingFile"/>
+            <AppenderRef ref="RollingFile Main"/>
         </Logger>
 
-        <Logger name="com.andeji.Log2">
-            <AppenderRef ref="RollingFile2"/>
+        <Logger name="com.andeji.JavaA3Log2">
+            <AppenderRef ref="RollingFile Log2"/>
         </Logger>
-
 
         <Root level="debug">
-
-            <AppenderRef ref="Console"/>
+           <AppenderRef ref="Console"/>
         </Root>
     </Loggers>
 </Configuration>

@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="A3new" />
+        <module name="Java2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="A3new" target="8" />
+      <module name="Java2" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

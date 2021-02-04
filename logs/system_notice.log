@@ -1,5 +1,5 @@
-2021-02-03 15:53:02,246 DEBUG c.a.Main [main] This will be printed on debug
-2021-02-03 15:53:02,251 INFO c.a.Main [main] This will be printed on info
-2021-02-03 15:53:02,251 WARN c.a.Main [main] This will be printed on warn
-2021-02-03 15:53:02,251 ERROR c.a.Main [main] This will be printed on error
-2021-02-03 15:53:02,252 FATAL c.a.Main [main] This will be printed on fatal
+2021-02-04 15:55:23,985 DEBUG c.a.Main [main] This will be printed on debug
+2021-02-04 15:55:23,991 INFO c.a.Main [main] This will be printed on info
+2021-02-04 15:55:23,992 WARN c.a.Main [main] This will be printed on warn
+2021-02-04 15:55:23,992 ERROR c.a.Main [main] This will be printed on error
+2021-02-04 15:55:23,992 FATAL c.a.Main [main] This will be printed on fatal
