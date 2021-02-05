@@ -1,6 +1,6 @@
 package test;
 
-public class Implement implements MyInterface {
+public class JavaA2 implements MyInterface {
 
     public String pubString = "public string";
 

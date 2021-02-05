@@ -14,7 +14,7 @@ public class JavaA3 {
         logger1.error("This will be printed on error");
         logger1.fatal("This will be printed on fatal");
 
-        Logger logger2 = (Logger) LogManager.getLogger(JavaA3Log2.class);
-        logger2.debug("debug");
+//        Logger logger2 = (Logger) LogManager.getLogger(JavaA3Log2.class);
+//        logger2.debug("debug");
     }
 }

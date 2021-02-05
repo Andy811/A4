@@ -16,17 +16,17 @@
             </Policies>
         </RollingFile>
 
-
-        <RollingFile name="RollingFile Log2" fileName="logs/Log2.system_notice.log"
-                     filePattern="logs/Log2.system_notice.log.%d{yyyyMMdd-hh.mm.ss}.log">
-            <PatternLayout>
-                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
-            </PatternLayout>
-            <Policies>
-                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>
-                <OnStartupTriggeringPolicy/>
-            </Policies>
-        </RollingFile>
+<!--第二個檔案-->
+<!--        <RollingFile name="RollingFile Log2" fileName="logs/Log2.system_notice.log"-->
+<!--                     filePattern="logs/Log2.system_notice.log.%d{yyyyMMdd-hh.mm.ss}.log">-->
+<!--            <PatternLayout>-->
+<!--                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>-->
+<!--            </PatternLayout>-->
+<!--            <Policies>-->
+<!--                <TimeBasedTriggeringPolicy modulate="true" interval="1"/>-->
+<!--                <OnStartupTriggeringPolicy/>-->
+<!--            </Policies>-->
+<!--        </RollingFile>-->
     </Appenders>
 
     <Loggers>
@@ -34,9 +34,10 @@
             <AppenderRef ref="RollingFile Main"/>
         </Logger>
 
-        <Logger name="com.andeji.JavaA3Log2">
-            <AppenderRef ref="RollingFile Log2"/>
-        </Logger>
+        <!--指定第二個class的appender-->
+<!--        <Logger name="com.andeji.JavaA3Log2">-->
+<!--            <AppenderRef ref="RollingFile Log2"/>-->
+<!--        </Logger>-->
 
         <Root level="debug">
            <AppenderRef ref="Console"/>

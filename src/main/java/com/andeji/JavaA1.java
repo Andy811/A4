@@ -4,17 +4,17 @@ import java.util.*;
 
 public class JavaA1 {
     public void a1() {
-        HashMap<String, Integer> hashmap = new HashMap<String, Integer>();
         String str = "This is a book. That is a pencil.This is good, and that is bad.";
 
-        String x = str.replaceAll("[\\W]", " ");
-        String x2 = x.replaceAll("  ", " ");
+        String a = str.replaceAll("[\\W]", " ");
+        String a2 = a.replaceAll("  ", " ");
 
-        x2 = x2.toLowerCase();
+        a2 = a2.toLowerCase();
 
-        String[] xx = x2.split(" ");
+        String[] xx = a2.split(" ");
 
 
+        HashMap<String, Integer> hashmap = new HashMap<String, Integer>();
         for (int i = 0; i < xx.length; i++) {
             xx[i] = xx[i].toUpperCase().charAt(0) + xx[i].substring(1);
             if (hashmap.containsKey(xx[i])) {
@@ -31,7 +31,6 @@ public class JavaA1 {
         Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
             @Override
             public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
-
                 return o1.getValue() - o2.getValue();
             }
         });

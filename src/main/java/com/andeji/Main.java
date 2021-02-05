@@ -1,15 +1,13 @@
 package com.andeji;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.Logger;
-import test.Implement;
+import test.JavaA2;
 import test.MyInterface;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
-public class Main extends Implement implements MyInterface {
+public class Main extends JavaA2 {
     protected String b;
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
@@ -24,9 +22,6 @@ public class Main extends Implement implements MyInterface {
             switch (problemNum) {
                 case 1:
                     javaA1();
-                    break;
-                case 2:
-                    javaA2();
                     break;
                 case 3:
                     javaA3();
@@ -79,18 +74,19 @@ public class Main extends Implement implements MyInterface {
         a3.a3();
     }
 
-    private static void javaA2() {
-        // A2
-        Implement im = new Implement();
-
-        Main main = new Main();
-        String pubString = im.pubString;  //This is public example
-        String proString = main.proString; //This is protected example
-        String defString;
-
-        main.overloadMethod();
-        main.overloadMethod("overload");  //this is overload example
-    }
+//    private static void javaA2() {
+//        // A2
+//        JavaA2 im = new JavaA2();
+//
+//        Main main = new Main();
+//        String pubString = im.pubString;  //This is public example
+//        String proString = main.proString; //This is protected example
+//        String defString;
+//        im.defMethod();
+//
+//        main.overloadMethod();
+//        main.overloadMethod("overload");  //this is overload example
+//    }
 
     private static void javaA1() {
         JavaA1 a1 = new JavaA1();
