@@ -35,6 +35,7 @@ public class Main extends JavaA2 {
             }
         }
 
+        System.out.println("commit test");
 
     }
 
