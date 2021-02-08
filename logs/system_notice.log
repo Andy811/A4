@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 2021-02-08 14:48:55,559 DEBUG c.a.Main [main] This will be printed on debug
 2021-02-08 14:48:55,563 INFO c.a.Main [main] This will be printed on info
 2021-02-08 14:48:55,563 WARN c.a.Main [main] This will be printed on warn
 2021-02-08 14:48:55,563 ERROR c.a.Main [main] This will be printed on error
 2021-02-08 14:48:55,563 FATAL c.a.Main [main] This will be printed on fatal
+=======
+2021-02-08 14:51:39,609 DEBUG c.a.Main [main] This will be printed on debug
+2021-02-08 14:51:39,613 INFO c.a.Main [main] This will be printed on info
+2021-02-08 14:51:39,613 WARN c.a.Main [main] This will be printed on warn
+2021-02-08 14:51:39,614 ERROR c.a.Main [main] This will be printed on error
+2021-02-08 14:51:39,614 FATAL c.a.Main [main] This will be printed on fatal
+>>>>>>> 6fc800b0adba96efbfe6daa9e6db8ed3c55f7777
