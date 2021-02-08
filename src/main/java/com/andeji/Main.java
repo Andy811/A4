@@ -1,13 +1,12 @@
 package com.andeji;
 
-import test.JavaA2;
-import test.MyInterface;
+
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
-public class Main extends JavaA2 {
+public class Main  {
     protected String b;
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {

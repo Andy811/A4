@@ -38,13 +38,6 @@ public class JavaA4 {
 
     }
 
-    //寫入properties
-//    private void writeProperties(Properties props) throws IOException {
-//        FileOutputStream fos = new FileOutputStream("src/main/java/com/andeji/resource.properties");
-//
-//        props.store(new OutputStreamWriter(fos, "UTF-8")
-//                , "Update '" + "安安" + "' value");
-//
-//    }
+
 
 }

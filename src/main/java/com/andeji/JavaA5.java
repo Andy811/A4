@@ -16,26 +16,24 @@ public class JavaA5 {
             // 輸入的字串轉換成位元組陣列
 
             messageDigest.update(salt.getBytes());
-
+            messageDigest.update(input.getBytes());
+            byte[] inputByteArray = messageDigest.digest();
             // inputByteArray是輸入字串轉換得到的位元組陣列
 
-            byte[] inputByteArray = messageDigest.digest(input.getBytes());
+
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < inputByteArray.length; i++) {
-                sb.append(Integer.toString((inputByteArray[i] & 0xff) +  0x100, 16).substring(1));
+                sb.append(Integer.toString((inputByteArray[i] & 0xff) + 0x100, 16).substring(1));
             }
 //            System.out.println(Integer.toString((inputByteArray[0] & 0xff) +  0x100, 16).substring(1));
             String generatedPassword = sb.toString();
 
-            messageDigest.update(inputByteArray);
 
             return generatedPassword;
         } catch (NoSuchAlgorithmException e) {
             return null;
         }
     }
-
-
 
 
     public String getSalt() throws NoSuchAlgorithmException {
